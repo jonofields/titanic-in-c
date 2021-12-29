@@ -19,7 +19,7 @@ class Matrix {
         double Precision(int true_positive, int false_positive);
         double Recall(int true_positive, int false_negative);
         double F1(double precision, double recall);
-
+        void check;
 
     private:
         int expected_;
