@@ -9,8 +9,8 @@
 #ifndef BOOST_MATH_DISTRIBUTIONS_COMMON_ERROR_HANDLING_HPP
 #define BOOST_MATH_DISTRIBUTIONS_COMMON_ERROR_HANDLING_HPP
 
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/policies/error_handling.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/special_functions/fpclassify.hpp>
+#include <boost/math/policies/error_handling.hpp>
+#include <boost/math/special_functions/fpclassify.hpp>
 // using boost::math::isfinite;
 // using boost::math::isnan;
 

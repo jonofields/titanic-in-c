@@ -13,14 +13,14 @@
 #include <cmath>
 #include <cstdint>
 #include <limits>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/config.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/series.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/precision.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/big_constant.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/policies/error_handling.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/rational.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/special_functions/math_fwd.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/assert.hpp>
+#include <boost/math/tools/config.hpp>
+#include <boost/math/tools/series.hpp>
+#include <boost/math/tools/precision.hpp>
+#include <boost/math/tools/big_constant.hpp>
+#include <boost/math/policies/error_handling.hpp>
+#include <boost/math/tools/rational.hpp>
+#include <boost/math/special_functions/math_fwd.hpp>
+#include <boost/math/tools/assert.hpp>
 
 #if defined(__GNUC__) && defined(BOOST_MATH_USE_FLOAT128)
 //

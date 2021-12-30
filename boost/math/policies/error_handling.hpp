@@ -17,10 +17,10 @@
 #include <cmath>
 #include <cstdint>
 #include <stdexcept>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/config.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/policies/policy.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/precision.hpp>
-#include </Users/jonofields/Desktop/Programming/C++/boost/math/tools/throw_exception.hpp>
+#include <boost/math/tools/config.hpp>
+#include <boost/math/policies/policy.hpp>
+#include <boost/math/tools/precision.hpp>
+#include <boost/math/tools/throw_exception.hpp>
 
 #ifdef _MSC_VER
 #  pragma warning(push) // Quiet warnings in boost/format.hpp

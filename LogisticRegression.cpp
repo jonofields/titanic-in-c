@@ -1,6 +1,6 @@
 #include "LogisticRegression.h"
-#include "boost_math/distributions/fwd.hpp"
-#include "boost_math/distributions/exponential.hpp"
+#include "boost/math/distributions/fwd.hpp"
+#include "boost/math/distributions/exponential.hpp"
 //double Calculate::LogisticReg(){}
 int Calculate::Predict(double phat, int yhat){
         if(phat >= 1){
@@ -11,3 +11,8 @@ int Calculate::Predict(double phat, int yhat){
         }
         return yhat;
     }
+double Calculate::Sigmoid(double x){
+    1/(1+boost::math::exponential_distribution())
+    //look into boost docs
+}    
+
