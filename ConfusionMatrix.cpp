@@ -14,9 +14,11 @@ int yhat_neg; //predicted
 
 void Matrix::inputExpected(int expected){
     expected_ = expected;
+    //heap?
 }
 void Matrix::inputPredicted(int predicted){
     predicted_ = predicted;
+    //heap?
 }
 //TO DO FOR CALC: 
 //FIND A WAY TO ITERATE BETWEEN EACH AND COMPARE AT INDEX
@@ -30,6 +32,7 @@ void Matrix::inputPredicted(int predicted){
 //     while(i<predicted_[i]){
 //         if(){
 //             true_positive = true_positive + 1;
+//             int * true_positive = new int; 
 //         }
 //         else if (){
 //             true_negative = true_negative + 1;
@@ -42,15 +45,25 @@ void Matrix::inputPredicted(int predicted){
 //         }
 //     }
 // }
-
-
-double Matrix::Precision(int true_positive, int false_positive){
-    Matrix::precision = true_positive / true_positive + false_positive;
+double ClassificationReport::Accuracy(int true_positive, int true_negative, int len){
+    ClassificationReport::accuracy = (true_negative + true_positive)/ len;
 }
 
-double Matrix::Recall(int true_positive, int false_negative){
-    Matrix::recall = true_positive / true_positive + false_negative;
+double ClassificationReport::Precision(int true_positive, int false_positive){
+    ClassificationReport::precision = true_positive / true_positive + false_positive;
+    int * precision = new int;//pointer here or in main file?
 }
-double Matrix::F1(double precision, double recall){
+
+double ClassificationReport::Recall(int true_positive, int false_negative){
+    ClassificationReport::recall = true_positive / true_positive + false_negative;
+    int * recall = new int;
+}
+
+double ClassificationReport::F1(double precision, double recall){
     2 / (1/precision) + (1/recall);
+    //Don't think F1 has to go in heap.  
 }
+
+//^^Split Matrix class into Matrix(variables and functions in finding
+//the matrix itself) and ClassificationReport class, which includes three bottom functions.
+//Add Accuracy?
