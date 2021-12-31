@@ -6,6 +6,7 @@
 #ifndef BOOST_STATS_EXPONENTIAL_HPP
 #define BOOST_STATS_EXPONENTIAL_HPP
 
+#include "LogisticRegression.h"
 #include "boost/math/distributions/fwd.hpp"
 #include "boost/math/constants/constants.hpp"
 #include "boost/math/special_functions/log1p.hpp"
@@ -56,7 +57,7 @@ inline bool verify_exp_x(const char* function, RealType x, RealType* presult, co
 
 } // namespace detail
 
-template <class RealType = double, class Policy = policies::policy<> >
+template <class RealType = double, class Policy = policy::policies <> >
 class exponential_distribution
 {
 public:
