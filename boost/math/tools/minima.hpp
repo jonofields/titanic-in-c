@@ -14,8 +14,8 @@
 #include <cstdint>
 #include <cmath>
 #include <utility>
-#include <boost/math/tools/precision.hpp>
-#include <boost/math/policies/policy.hpp>
+#include "precision.hpp"
+#include "../policies/policy.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 

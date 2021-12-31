@@ -13,7 +13,7 @@
 #include <cmath>
 #include <cstdint>
 #include <limits>
-#include <boost/math/tools/config.hpp>
+#include "config.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 

@@ -6,12 +6,12 @@
 #ifndef BOOST_MATH_TOOLS_RECURRENCE_HPP_
 #define BOOST_MATH_TOOLS_RECURRENCE_HPP_
 
-#include <boost/math/tools/config.hpp>
-#include <boost/math/tools/precision.hpp>
-#include <boost/math/tools/tuple.hpp>
-#include <boost/math/tools/fraction.hpp>
-#include <boost/math/tools/cxx03_warn.hpp>
-#include <boost/math/tools/assert.hpp>
+#include "config.hpp"
+#include "precision.hpp"
+#include "tuple.hpp"
+#include "fraction.hpp"
+#include "cxx03_warn.hpp"
+#include "assert.hpp"
 
 namespace boost {
    namespace math {

@@ -10,8 +10,8 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/precision.hpp>
-#include <boost/math/tools/complex.hpp>
+#include "precision.hpp"
+#include "complex.hpp"
 #include <type_traits>
 #include <cstdint>
 #include <cmath>

@@ -26,9 +26,9 @@
 #include <vector>
 #include <complex>
 #include <type_traits>
-#include <boost/math/special_functions/detail/round_fwd.hpp>
-#include <boost/math/tools/promotion.hpp> // for argument promotion.
-#include <boost/math/policies/policy.hpp>
+#include "detail/round_fwd.hpp"
+#include "../tools/promotion.hpp" // for argument promotion.
+#include "../policies/policy.hpp"
 
 #define BOOST_NO_MACRO_EXPAND /**/
 

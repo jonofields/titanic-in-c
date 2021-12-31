@@ -24,8 +24,8 @@ With these techniques, the code could be simplified.
 #include <cstdint>
 #include <limits>
 #include <type_traits>
-#include <boost/math/tools/is_standalone.hpp>
-#include <boost/math/tools/assert.hpp>
+#include "../../tools/is_standalone.hpp"
+#include "../../tools/assert.hpp"
 
 // Determine endianness
 #ifndef BOOST_MATH_STANDALONE

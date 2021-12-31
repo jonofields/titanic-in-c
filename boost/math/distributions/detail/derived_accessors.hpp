@@ -28,7 +28,7 @@
 //
 
 #include <cmath>
-#include <boost/math/tools/assert.hpp>
+#include "../../tools/assert.hpp"
 
 #ifdef _MSC_VER
 # pragma warning(push)

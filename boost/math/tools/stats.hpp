@@ -12,7 +12,7 @@
 
 #include <cstdint>
 #include <cmath>
-#include <boost/math/tools/precision.hpp>
+#include "precision.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 

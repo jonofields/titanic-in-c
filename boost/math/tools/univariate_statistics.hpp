@@ -9,8 +9,8 @@
 #include <algorithm>
 #include <iterator>
 #include <tuple>
-#include <boost/math/tools/assert.hpp>
-#include <boost/math/tools/header_deprecated.hpp>
+#include "assert.hpp"
+#include "header_deprecated.hpp"
 
 BOOST_MATH_HEADER_DEPRECATED("<boost/math/statistics/univariate_statistics.hpp>");
 

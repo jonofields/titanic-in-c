@@ -6,13 +6,12 @@
 #ifndef BOOST_STATS_EXPONENTIAL_HPP
 #define BOOST_STATS_EXPONENTIAL_HPP
 
-#include "LogisticRegression.h"
-#include "boost/math/distributions/fwd.hpp"
-#include "boost/math/constants/constants.hpp"
-#include "boost/math/special_functions/log1p.hpp"
-#include "boost/math/special_functions/expm1.hpp"
-#include "boost/math/distributions/complement.hpp"
-#include "boost/math/distributions/detail/common_error_handling.hpp"
+#include "fwd.hpp"
+#include "../constants/constants.hpp"
+#include "../special_functions/log1p.hpp"
+#include "../special_functions/expm1.hpp"
+#include "complement.hpp"
+#include "detail/common_error_handling.hpp"
 
 #ifdef _MSC_VER
 # pragma warning(push)
@@ -278,6 +277,6 @@ inline RealType entropy(const exponential_distribution<RealType, Policy>& dist)
 // This include must be at the end, *after* the accessors
 // for this distribution have been defined, in order to
 // keep compilers that support two-phase lookup happy.
-#include <boost/math/distributions/detail/derived_accessors.hpp>
+#include "detail/derived_accessors.hpp"
 
 #endif // BOOST_STATS_EXPONENTIAL_HPP

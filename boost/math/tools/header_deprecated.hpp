@@ -8,7 +8,7 @@
 
 #ifndef BOOST_MATH_STANDALONE
 
-#   include <boost/config/header_deprecated.hpp>
+#   include "header_deprecated.hpp"
 #   define BOOST_MATH_HEADER_DEPRECATED(expr) BOOST_HEADER_DEPRECATED(expr)
 
 #else

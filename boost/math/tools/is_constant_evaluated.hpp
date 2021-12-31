@@ -6,7 +6,7 @@
 #ifndef BOOST_MATH_TOOLS_IS_CONSTANT_EVALUATED_HPP
 #define BOOST_MATH_TOOLS_IS_CONSTANT_EVALUATED_HPP
 
-#include <boost/math/tools/config.hpp>
+#include "config.hpp"
 
 #ifdef __has_include
 # if __has_include(<version>)

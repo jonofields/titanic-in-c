@@ -11,7 +11,7 @@
 #endif
 
 #include <type_traits>
-#include <boost/math/tools/lexical_cast.hpp>
+#include "lexical_cast.hpp"
 
 namespace boost{ namespace math{ namespace tools{
 

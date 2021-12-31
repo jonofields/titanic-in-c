@@ -9,20 +9,20 @@
 #ifdef _MSC_VER
 #pragma once
 #endif
-#include <boost/math/tools/complex.hpp> // test for multiprecision types in complex Newton
+#include "complex.hpp" // test for multiprecision types in complex Newton
 
 #include <utility>
 #include <cmath>
 #include <tuple>
 #include <cstdint>
 
-#include <boost/math/tools/config.hpp>
-#include <boost/math/tools/cxx03_warn.hpp>
+#include "config.hpp"
+#include "cxx03_warn.hpp"
 
-#include <boost/math/special_functions/sign.hpp>
-#include <boost/math/special_functions/next.hpp>
-#include <boost/math/tools/toms748_solve.hpp>
-#include <boost/math/policies/error_handling.hpp>
+#include "../special_functions/sign.hpp"
+#include "../special_functions/next.hpp"
+#include "toms748_solve.hpp"
+#include "../policies/error_handling.hpp"
 
 namespace boost {
 namespace math {

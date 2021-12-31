@@ -10,8 +10,8 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/assert.hpp>
-#include <boost/math/policies/policy.hpp>
+#include "assert.hpp"
+#include "../policies/policy.hpp"
 #include <type_traits>
 #include <limits>
 #include <climits>

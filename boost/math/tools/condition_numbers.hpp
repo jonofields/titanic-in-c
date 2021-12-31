@@ -7,7 +7,7 @@
 #define BOOST_MATH_TOOLS_CONDITION_NUMBERS_HPP
 #include <cmath>
 #include <limits>
-#include <boost/math/differentiation/finite_difference.hpp>
+#include "../differentiation/finite_difference.hpp"
 
 namespace boost::math::tools {
 

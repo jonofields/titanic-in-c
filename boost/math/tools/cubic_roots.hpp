@@ -6,8 +6,8 @@
 #define BOOST_MATH_TOOLS_CUBIC_ROOTS_HPP
 #include <array>
 #include <algorithm>
-#include <boost/math/special_functions/sign.hpp>
-#include <boost/math/tools/roots.hpp>
+#include <../special_functions/sign.hpp>
+#include "roots.hpp"
 
 namespace boost::math::tools {
 

@@ -11,7 +11,7 @@
 #define BOOST_MATH_TOOLS_COMPLEX_HPP
 
 #include <utility>
-#include <boost/math/tools/is_detected.hpp>
+#include "is_detected.hpp"
 
 namespace boost {
    namespace math {

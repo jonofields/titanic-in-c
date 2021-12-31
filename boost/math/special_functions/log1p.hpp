@@ -15,14 +15,14 @@
 #include <cmath>
 #include <cstdint>
 #include <limits>
-#include <boost/math/tools/config.hpp>
-#include <boost/math/tools/series.hpp>
-#include <boost/math/tools/rational.hpp>
-#include <boost/math/tools/big_constant.hpp>
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/math/special_functions/math_fwd.hpp>
-#include <boost/math/tools/assert.hpp>
-#include <boost/math/special_functions/fpclassify.hpp>
+#include "../tools/config.hpp"
+#include "../tools/series.hpp"
+#include "../tools/rational.hpp"
+#include "../tools/big_constant.hpp"
+#include "../policies/error_handling.hpp"
+#include "math_fwd.hpp"
+#include "../tools/assert.hpp"
+#include "fpclassify.hpp"
 
 #if defined(__GNUC__) && defined(BOOST_MATH_USE_FLOAT128)
 //

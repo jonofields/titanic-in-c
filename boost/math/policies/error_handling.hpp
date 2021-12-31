@@ -1,4 +1,4 @@
-/Users/jonofields/Desktop/Programming/C++///  Copyright John Maddock 2007.
+//Users/jonofields/Desktop/Programming/C++///  Copyright John Maddock 2007.
 //  Copyright Paul A. Bristow 2007.
 
 //  Use, modification and distribution are subject to the
@@ -17,10 +17,10 @@
 #include <cmath>
 #include <cstdint>
 #include <stdexcept>
-#include <boost/math/tools/config.hpp>
-#include <boost/math/policies/policy.hpp>
-#include <boost/math/tools/precision.hpp>
-#include <boost/math/tools/throw_exception.hpp>
+#include "../tools/config.hpp"
+#include "policy.hpp"
+#include "../tools/precision.hpp"
+#include "../tools/throw_exception.hpp"
 
 #ifdef _MSC_VER
 #  pragma warning(push) // Quiet warnings in boost/format.hpp
@@ -841,7 +841,7 @@ std::pair<T, T> pair_from_single(const T& val) BOOST_MATH_NOEXCEPT(T)
 #  pragma warning(pop)
 #endif
 
-}} // namespaces boost/math
+}} // namespaces ..
 
 #endif // BOOST_MATH_POLICY_ERROR_HANDLING_HPP
 

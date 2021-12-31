@@ -13,8 +13,8 @@
 
 #include <algorithm>
 #include <type_traits>
-#include <boost/math/tools/is_standalone.hpp>
-#include <boost/math/tools/polynomial.hpp>
+#include "is_standalone.hpp"
+#include "polynomial.hpp"
 
 #ifndef BOOST_MATH_STANDALONE
 #include <boost/integer/common_factor_rt.hpp>
@@ -27,7 +27,7 @@
 #include <utility>
 #include <iterator>
 #include <type_traits>
-#include <boost/math/tools/assert.hpp>
+#include <assert.hpp>
 
 namespace boost::integer {
 

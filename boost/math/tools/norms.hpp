@@ -9,8 +9,8 @@
 #include <iterator>
 #include <complex>
 #include <cmath>
-#include <boost/math/tools/assert.hpp>
-#include <boost/math/tools/complex.hpp>
+#include "assert.hpp"
+#include "complex.hpp"
 
 
 namespace boost::math::tools {

@@ -4,9 +4,9 @@
 //  LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 #ifndef BOOST_MATH_TOOLS_NUMERICAL_DIFFERENTIATION_HPP
 #define BOOST_MATH_TOOLS_NUMERICAL_DIFFERENTIATION_HPP
-#include <boost/math/differentiation/finite_difference.hpp>
-#include <boost/math/tools/header_deprecated.hpp>
+#include <../differentiation/finite_difference.hpp>
+#include "header_deprecated.hpp"
 
-BOOST_MATH_HEADER_DEPRECATED("<boost/math/differentiation/finite_difference.hpp>");
+BOOST_MATH_HEADER_DEPRECATED("<../differentiation/finite_difference.hpp>");
 
 #endif

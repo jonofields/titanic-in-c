@@ -16,8 +16,8 @@
 #include <random>
 #include <limits>
 #include <stdexcept>
-#include <boost/math/tools/is_standalone.hpp>
-#include <boost/math/tools/condition_numbers.hpp>
+#include "is_standalone.hpp"
+#include "condition_numbers.hpp"
 
 #ifndef BOOST_MATH_STANDALONE
 #include <boost/random/uniform_real_distribution.hpp>

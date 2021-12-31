@@ -14,9 +14,9 @@
 #include <limits>
 #include <type_traits>
 #include <cmath>
-#include <boost/math/tools/real_cast.hpp>
-#include <boost/math/special_functions/math_fwd.hpp>
-#include <boost/math/special_functions/detail/fp_traits.hpp>
+#include "../tools/real_cast.hpp"
+#include "math_fwd.hpp"
+#include "detail/fp_traits.hpp"
 /*!
   \file fpclassify.hpp
   \brief Classify floating-point value as normal, subnormal, zero, infinite, or NaN.

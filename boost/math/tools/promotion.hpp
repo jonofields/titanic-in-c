@@ -22,7 +22,7 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/config.hpp>
+#include "config.hpp"
 #include <type_traits>
 
 namespace boost

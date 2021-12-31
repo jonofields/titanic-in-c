@@ -10,16 +10,16 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/precision.hpp>
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/math/tools/config.hpp>
-#include <boost/math/special_functions/sign.hpp>
+#include "precision.hpp"
+#include "../policies/error_handling.hpp"
+#include "config.hpp"
+#include "../special_functions/sign.hpp"
 #include <limits>
 #include <utility>
 #include <cstdint>
 
 #ifdef BOOST_MATH_LOG_ROOT_ITERATIONS
-#  define BOOST_MATH_LOGGER_INCLUDE <boost/math/tools/iteration_logger.hpp>
+#  define BOOST_MATH_LOGGER_INCLUDE <iteration_logger.hpp>
 #  include BOOST_MATH_LOGGER_INCLUDE
 #  undef BOOST_MATH_LOGGER_INCLUDE
 #else

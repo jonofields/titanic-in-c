@@ -14,7 +14,7 @@
 #include <limits>
 #include <stdexcept>
 #include <sstream>
-#include <boost/math/tools/is_standalone.hpp>
+#include "is_standalone.hpp"
 
 #ifndef BOOST_MATH_STANDALONE
 #include <boost/core/demangle.hpp>

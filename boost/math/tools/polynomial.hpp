@@ -13,14 +13,14 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/assert.hpp>
-#include <boost/math/tools/config.hpp>
-#include <boost/math/tools/cxx03_warn.hpp>
-#include <boost/math/tools/rational.hpp>
-#include <boost/math/tools/real_cast.hpp>
-#include <boost/math/policies/error_handling.hpp>
-#include <boost/math/special_functions/binomial.hpp>
-#include <boost/math/tools/detail/is_const_iterable.hpp>
+#include "assert.hpp"
+#include "config.hpp"
+#include "cxx03_warn.hpp"
+#include "rational.hpp"
+#include "real_cast.hpp"
+#include "../policies/error_handling.hpp"
+#include "../special_functions/binomial.hpp"
+#include "detail/is_const_iterable.hpp"
 
 #include <vector>
 #include <ostream>
@@ -849,6 +849,6 @@ inline std::basic_ostream<charT, traits>& operator << (std::basic_ostream<charT,
 //
 // Polynomial specific overload of gcd algorithm:
 //
-#include <boost/math/tools/polynomial_gcd.hpp>
+#include <polynomial_gcd.hpp>
 
 #endif // BOOST_MATH_TOOLS_POLYNOMIAL_HPP

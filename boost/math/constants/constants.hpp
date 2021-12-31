@@ -7,11 +7,11 @@
 #ifndef BOOST_MATH_CONSTANTS_CONSTANTS_INCLUDED
 #define BOOST_MATH_CONSTANTS_CONSTANTS_INCLUDED
 
-#include "boost/math/tools/config.hpp"
-#include "boost/math/tools/cxx03_warn.hpp"
-#include "boost/math/policies/policy.hpp"
-#include "boost/math/tools/precision.hpp"
-#include "boost/math/tools/convert_from_string.hpp"
+#include "../tools/config.hpp"
+#include "../tools/cxx03_warn.hpp"
+#include "../policies/policy.hpp"
+#include "../tools/precision.hpp"
+#include "../tools/convert_from_string.hpp"
 #ifdef _MSC_VER
 #pragma warning(push/
 #pragma warning(disable: 4127 4701)
@@ -338,7 +338,7 @@ inline constexpr T tau() {  return two_pi<T>(); }
 // We deliberately include this *after* all the declarations above,
 // that way the calculation routines can call on other constants above:
 //
-#include <boost/math/constants/calculate_constants.hpp>
+#include "calculate_constants.hpp"
 
 #endif // BOOST_MATH_CONSTANTS_CONSTANTS_INCLUDED
 

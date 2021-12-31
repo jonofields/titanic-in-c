@@ -1,4 +1,4 @@
-/Users/jonofields/Desktop/Programming/C++///  Copyright John Maddock 2007.
+//Users/jonofields/Desktop/Programming/C++///  Copyright John Maddock 2007.
 //  Copyright Matt Borland 2021.
 //  Use, modification and distribution are subject to the
 //  Boost Software License, Version 1.0. (See accompanying file
@@ -7,8 +7,8 @@
 #ifndef BOOST_MATH_POLICY_HPP
 #define BOOST_MATH_POLICY_HPP
 
-#include <boost/math/tools/config.hpp>
-#include <boost/math/tools/mp.hpp>
+#include "../tools/config.hpp"
+#include "../tools/mp.hpp"
 #include <limits>
 #include <type_traits>
 #include <cmath>

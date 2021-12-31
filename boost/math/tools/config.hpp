@@ -11,7 +11,7 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/is_standalone.hpp>
+#include "is_standalone.hpp"
 
 #ifndef BOOST_MATH_STANDALONE
 #include <boost/config.hpp>
@@ -79,7 +79,7 @@
 #  include <math.h>
 #endif
 
-#include <boost/math/tools/user.hpp>
+#include "user.hpp"
 
 #if (defined(__CYGWIN__) || defined(__FreeBSD__) || defined(__NetBSD__) || defined(__EMSCRIPTEN__)\
    || (defined(__hppa) && !defined(__OpenBSD__)) || (defined(__NO_LONG_DOUBLE_MATH) && (DBL_MANT_DIG != LDBL_MANT_DIG))) \

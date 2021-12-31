@@ -6,7 +6,7 @@
 #ifndef BOOST_MATH_TOOLS_THROW_EXCEPTION_HPP
 #define BOOST_MATH_TOOLS_THROW_EXCEPTION_HPP
 
-#include <boost/math/tools/is_standalone.hpp>
+#include "is_standalone.hpp"
 
 #ifndef BOOST_MATH_STANDALONE
 
