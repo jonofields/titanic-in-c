@@ -9,11 +9,15 @@ class Calculate {
     double phat;
     int yhat;
     double x;
-    int Predict(double phat, int yhat);
-    int Sigmoid(double x);
-    double sig_;
-    //sigmoid 1/1+exp(-x)
     int y;
+    int Predict(double phat,int yhat);
+    double x_;
+    double Sigmoid(double x);
+    double inputX(double x_);
+    int sig;
+
+    private:
+    double sig_;
 
     //For boost
     template <class RealType = double,

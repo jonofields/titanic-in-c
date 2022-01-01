@@ -2,12 +2,16 @@
 #include <iostream>
 #include <string>
 
-using std::cin; using std::cout;
+using std::cin; using std::cout; using std::endl;
 int main(){
     LogReg::Calculate c;
-    cout << "Sigmoid test, input x" << std::endl;
-    cin >> c.x >> std::endl;
-    cout << c.Sigmoid(c.x) << std::endl;
+    // cout << "Sigmoid test, input x" << endl;
+    // cin >> c.inputX();
+    // cout << c.Sigmoid(c.x) << endl;
+    cout << "input x" << endl;
+    double inputX(c.x_);
+    cout << c.x << endl;
+
 
 }
 

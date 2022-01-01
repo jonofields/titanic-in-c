@@ -12,11 +12,26 @@
 //     }
 //     return yhat;
 // }
-int LogReg::Calculate::Sigmoid(LogReg::Calculate::x){
+#include <iostream>
+using std::cin;
+double LogReg::Calculate::inputX(LogReg::Calculate::x_){
+    cin >> x_ >> endl;
+    return x_;
+    int * x_ = x;
+    x = new int;
+    return x;
+    return x*;
+}
+
+double LogReg::Calculate::Sigmoid(LogReg::Calculate::x){
     sig_ = 1/(1+boost::math::exponential_distribution(RealType lambda=LogReg::Calculate::x));
     return sig_; 
+    int * sig = sig_;
+    sig = new int;
+    return sig;
         
 }   
+
 
  
 

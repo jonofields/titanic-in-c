@@ -1,4 +1,4 @@
-/Users/jonofields/Desktop/Programming/C++///  Copyright John Maddock 2005-2008.
+//Users/jonofields/Desktop/Programming/C++///  Copyright John Maddock 2005-2008.
 //  Copyright (c) 2006-2008 Johan Rade
 //  Use, modification and distribution are subject to the
 //  Boost Software License, Version 1.0. (See accompanying file
