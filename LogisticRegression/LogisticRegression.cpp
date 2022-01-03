@@ -25,12 +25,12 @@ double LogReg::Calculate::inputX(x_){
     return x*;
 }
 
-// double LogReg::Calculate::Sigmoid(LogReg::Calculate::x){
-//     sig_ = 1/(1+boost::math::detail::pdf(const exponential_distribution<RealType lambda=1, Policy policy_type = boost::math::tools::T>));
-//     return sig_; 
-//     int * sig = sig_;
-//     sig = new int;
-//     return sig;
+double LogReg::Calculate::Sigmoid(LogReg::Calculate::x){
+    sig_ = 1/(1+boost::math::detail::pdf(const exponential_distribution<RealType lambda=1>));
+    return sig_; 
+    int * sig = sig_;
+    sig = new int;
+    return sig;
         
 // }   
 // template <class RealType, class Policy>
