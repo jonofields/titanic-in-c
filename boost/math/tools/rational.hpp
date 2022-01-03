@@ -23,7 +23,7 @@
 #  include BOOST_HEADER()
 #  undef BOOST_HEADER
 #elif BOOST_MATH_POLY_METHOD == 3
-#  define BOOST_HEADER() <BOOST_JOIN(detail/polynomial_horner3_, BOOST_MATH_MAX_POLY_ORDER).hpp>
+#  define BOOST_HEADER() "BOOST_JOIN(detail/polynomial_horner3_, BOOST_MATH_MAX_POLY_ORDER).hpp"
 #  include BOOST_HEADER()
 #  undef BOOST_HEADER
 #endif
@@ -36,7 +36,7 @@
 #  include BOOST_HEADER()
 #  undef BOOST_HEADER
 #elif BOOST_MATH_RATIONAL_METHOD == 3
-#  define BOOST_HEADER() <BOOST_JOIN(detail/rational_horner3_, BOOST_MATH_MAX_POLY_ORDER).hpp>
+#  define BOOST_HEADER() "BOOST_JOIN(detail/rational_horner3_, BOOST_MATH_MAX_POLY_ORDER).hpp"
 #  include BOOST_HEADER()
 #  undef BOOST_HEADER
 #endif
@@ -83,26 +83,26 @@
 #include <detail/polynomial_horner2_17.hpp>
 #include <detail/polynomial_horner2_18.hpp>
 #include <detail/polynomial_horner2_19.hpp>
-#include <detail/polynomial_horner2_20.hpp>
-#include <detail/polynomial_horner3_2.hpp>
-#include <detail/polynomial_horner3_3.hpp>
-#include <detail/polynomial_horner3_4.hpp>
-#include <detail/polynomial_horner3_5.hpp>
-#include <detail/polynomial_horner3_6.hpp>
-#include <detail/polynomial_horner3_7.hpp>
-#include <detail/polynomial_horner3_8.hpp>
-#include <detail/polynomial_horner3_9.hpp>
-#include <detail/polynomial_horner3_10.hpp>
-#include <detail/polynomial_horner3_11.hpp>
-#include <detail/polynomial_horner3_12.hpp>
-#include <detail/polynomial_horner3_13.hpp>
-#include <detail/polynomial_horner3_14.hpp>
-#include <detail/polynomial_horner3_15.hpp>
-#include <detail/polynomial_horner3_16.hpp>
-#include <detail/polynomial_horner3_17.hpp>
-#include <detail/polynomial_horner3_18.hpp>
-#include <detail/polynomial_horner3_19.hpp>
-#include <detail/polynomial_horner3_20.hpp>
+#include "detail/polynomial_horner2_20.hpp>
+#include "detail/polynomial_horner3_2.hpp"
+#include "detail/polynomial_horner3_3.hpp"
+#include "detail/polynomial_horner3_4.hpp"
+#include "detail/polynomial_horner3_5.hpp"
+#include "detail/polynomial_horner3_6.hpp"
+#include "detail/polynomial_horner3_7.hpp"
+#include "detail/polynomial_horner3_8.hpp"
+#include "detail/polynomial_horner3_9.hpp"
+#include "detail/polynomial_horner3_10.hpp"
+#include "detail/polynomial_horner3_11.hpp"
+#include "detail/polynomial_horner3_12.hpp"
+#include "detail/polynomial_horner3_13.hpp"
+#include "detail/polynomial_horner3_14.hpp"
+#include "detail/polynomial_horner3_15.hpp"
+#include "detail/polynomial_horner3_16.hpp"
+#include "detail/polynomial_horner3_17.hpp"
+#include "detail/polynomial_horner3_18.hpp"
+#include "detail/polynomial_horner3_19.hpp"
+#include <detail/polynomial_horner3_20.hpp"
 #include <detail/rational_horner1_2.hpp>
 #include <detail/rational_horner1_3.hpp>
 #include <detail/rational_horner1_4.hpp>

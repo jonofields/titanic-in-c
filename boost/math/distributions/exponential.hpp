@@ -56,7 +56,7 @@ inline bool verify_exp_x(const char* function, RealType x, RealType* presult, co
 
 } // namespace detail
 
-template <class RealType = double, class Policy = policy::policies <> >
+template <class RealType = double, class Policy = boost::math::policies::default_policy <> >
 class exponential_distribution
 {
 public:
