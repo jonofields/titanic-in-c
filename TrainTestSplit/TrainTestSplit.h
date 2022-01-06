@@ -1,3 +1,4 @@
+#pragma once
 class Split {
     public:
     int X;
