@@ -10,7 +10,10 @@ class Split {
     int test;
     //^^output
     int trainTestSplit(int X, int y, double train_size, double test_size);
-
     double test_size_;
     double inputTest(double test_size_);
+
+    private:
+    int test_p;
+    int train_p;
 };

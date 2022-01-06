@@ -16,23 +16,16 @@
 
 #include <iostream>
 using std::cin; using LogReg::Calculate::x_;
+
 double LogReg::Calculate::inputX(x_){
     cin >> x_ >> endl;
-    return x_;
-    int * x_ = x;
-    x = new int;
-    return x;
-    return x*;
 }
+//don't mess with mem for now
 
 double LogReg::Calculate::Sigmoid(LogReg::Calculate::x){
     sig_ = 1/(1+boost::math::detail::pdf(const exponential_distribution<RealType lambda=1>));
     return sig_; 
-    int * sig = sig_;
-    sig = new int;
-    return sig;
-        
-// }   
+}   
 // template <class RealType, class Policy>
 // inline RealType pdf(const exponential_distribution<RealType, Policy>& dist, const RealType& x)
 // {
