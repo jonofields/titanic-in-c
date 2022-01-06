@@ -1,6 +1,6 @@
 #include "LogisticRegression.h"
-#include "../boost/math/distributions/fwd.hpp"
-#include "../boost/math/distributions/exponential.hpp"
+// #include "../boost/math/distributions/fwd.hpp"
+// #include "../boost/math/distributions/exponential.hpp"
 
 //double Calculate::LogisticReg(){}
 
@@ -13,19 +13,28 @@
 //     }
 //     return yhat;
 // }
+//TACKLE SIMPLE STUFF
+
 
 #include <iostream>
-using std::cin; using LogReg::Calculate::x_;
 
-double LogReg::Calculate::inputX(x_){
-    cin >> x_ >> endl;
+void LogReg::Calculate::inputX(double x_){
+    x = x_;
 }
 //don't mess with mem for now
 
-double LogReg::Calculate::Sigmoid(LogReg::Calculate::x){
-    sig_ = 1/(1+boost::math::detail::pdf(const exponential_distribution<RealType lambda=1>));
-    return sig_; 
-}   
+
+
+
+
+
+
+
+
+// double LogReg::Calculate::Sigmoid(double x){
+//     sig_ = 1/(1+boost::math::detail::pdf(const exponential_distribution<RealType lambda=1>));
+//     return sig_; 
+// }   
 // template <class RealType, class Policy>
 // inline RealType pdf(const exponential_distribution<RealType, Policy>& dist, const RealType& x)
 // {
