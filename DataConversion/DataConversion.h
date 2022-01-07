@@ -8,7 +8,9 @@ using std::fstream; using std::cout; using std::cin; using std::vector;
 //include iterator in these files?
 class Get {
     public:
-        double getRow();
-        
+        vector <int> getRow(vector <int> passenger);
+        vector <int> passenger;
+        vector <int> feature;
+
 };
    

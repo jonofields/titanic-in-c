@@ -9,6 +9,8 @@ int main(){
     cin >> c.x_;
     c.inputX(c.x_);
     cout << c.x << endl;
+    c.Sigmoid(c.x);
+    cout << c.sig_ << endl;
 
 }
 

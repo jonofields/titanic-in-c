@@ -1,4 +1,9 @@
 #include "LogisticRegression.h"
+#include <cmath>
+#include <valarray>
+#include <vector>
+// https://www.cplusplus.com/reference/algorithm/
+using std::vector;
 // #include "../boost/math/distributions/fwd.hpp"
 // #include "../boost/math/distributions/exponential.hpp"
 
@@ -23,39 +28,15 @@ void LogReg::Calculate::inputX(double x_){
 }
 //don't mess with mem for now
 
+double LogReg::Calculate::Sigmoid(double x){
+    sig_ = 1/(1+exp(-x));
+    return sig_; 
+}   
 
+//For Arrays-- Actually do not need
+// vector <double> LogReg::Calculate::sigmoidVector(vector <double> X){
+//     sig_vec_ = 1/(1+exp(X));
+//     return sig_vec_;
+// }  
 
-
-
-
-
-
-
-// double LogReg::Calculate::Sigmoid(double x){
-//     sig_ = 1/(1+boost::math::detail::pdf(const exponential_distribution<RealType lambda=1>));
-//     return sig_; 
-// }   
-// template <class RealType, class Policy>
-// inline RealType pdf(const exponential_distribution<RealType, Policy>& dist, const RealType& x)
-// {
-//    BOOST_MATH_STD_USING // for ADL of std functions
-
-//    static const char* function = "boost::math::pdf(const exponential_distribution<%1%>&, %1%)";
-
-//    RealType lambda = dist.lambda();
-//    RealType result = 0;
-//    if(0 == detail::verify_lambda(function, lambda, &result, Policy()))
-//       return result;
-//    if(0 == detail::verify_exp_x(function, x, &result, Policy()))
-//       return result;
-//    // Workaround for VC11/12 bug:
-//    if ((boost::math::isinf)(x))
-//       return 0;
-//    result = lambda * exp(-lambda * x);
-//    return result;
-// } // pdf
-
-// g++ /Users/jonofields/Desktop/Programming/C++/titanic-in-c/LogisticRegression/LogisticRegression.cpp -std=c++11
-
- 
-
+// http://faculty.cas.usf.edu/mbrannick/regression/Logistic.html

@@ -1,27 +1,35 @@
 #include <iostream>
 #include <vector>
 //expected and predicted to be vectors?
-
+using std::vector;
 class Matrix {
 
     public:
-        int true_positive;
-        int false_negative;
-        int false_positive;
-        int true_negative;
+        int true_positive = 0;
+        int false_negative = 0;
+        int false_positive = 0;
+        int true_negative = 0;
         int len;
 
-        void inputExpected(int expected);
-        void inputPredicted(int predicted);
-        int iterValue(int i);
-        int calcMatrix(int expected_, int predicted_);
 
+        vector <int> expected;
+        vector <int> predicted;
+        vector <int> expected_;
+        vector <int> predicted_;
 
+        void inputExpected(vector <int> expected_);
+        void inputPredicted(vector <int> predicted_);
+        // int iterValue(int i);
+        int num;
+        int calcMatrix(vector <int> expected, vector <int> predicted);
 
-    private:
-        int expected_;
-        int predicted_;
+        // int y_pos; //target
+        // int yhat_pos; //predicted
+        // int y_neg; //target
+        // int yhat_neg; //predicted
 
+      
+        
 
 
  
