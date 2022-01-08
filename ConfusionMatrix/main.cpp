@@ -5,14 +5,12 @@
 
 using std::cout; using std::cin; using std::vector; using std::endl;
 
-using namespace PerformanceEval;
 
 const int TERMINATOR = -1;
 
 int main()
 {   //need to loop through streams dummy!
     Matrix mat;
-    ClassificationReport classif;
 
     int num;
 
@@ -48,34 +46,28 @@ int main()
     cout << "Confusion Matrix: " << "\n" << endl;
     mat.calcMatrix(mat.expected_,mat.predicted_);
 
-    cout << "False Positives: " << mat.false_positive << "\n" << endl;
+    cout << "\t" << "False Positives: " << mat.false_positive << "\n" << endl;
 
-    cout << "True Positives: " << mat.true_positive << "\n" << endl;
+    cout << "\t" << "True Positives: " << mat.true_positive << "\n" << endl;
 
-    cout << "False Negatives: " <<mat.false_negative << "\n" << endl;
+    cout << "\t" << "False Negatives: " <<mat.false_negative << "\n" << endl;
 
-    cout << "True Negatives: " << mat.true_negative << "\n" << endl;
+    cout << "\t" << "True Negatives: " << mat.true_negative << "\n" << "\n" << endl;
 
-    classif.len = mat.len;
-    classif.true_negative = mat.true_negative;
-    classif.false_negative = mat.false_negative;
-    classif.true_positive = mat.true_positive;
-    classif.false_positive = mat.false_positive;
+
 
 
     cout << "Classification Report: " << "\n" << endl;
+
+    cout<< "\t" << "Accuracy: " << mat.accuracy << "\n" << endl;
+
+    cout<< "\t" << "Precision: " << mat.precision << "\n"<< endl;
+ 
+    cout<< "\t" << "Recall: " << mat.recall << "\n"<< endl;
+
+    cout<< "\t" << "F1: " << mat.f_one << "\n"<< endl;
+
     
-    classif.Accuracy(classif.true_positive, classif.true_negative, classif.len);
-    cout << "Accuracy: " << classif.accuracy << "\n" << endl;
-
-    classif.Precision(classif.true_positive,classif.false_positive);
-    cout << "Precision: " << classif.precision << "\n"<< endl;
-
-    classif.Recall(classif.true_positive,classif.false_positive);
-    cout << "Recall: " << classif.recall << "\n"<< endl;
-
-    classif.F1(classif.precision, classif.recall);
-    cout << "F1: " << classif.f_one << "\n"<< endl;
 
 
     return 0;
