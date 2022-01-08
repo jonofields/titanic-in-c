@@ -2,6 +2,7 @@
 #include <vector>
 //expected and predicted to be vectors?
 using std::vector;
+namespace PerformanceEval{
 class Matrix {
 
     public:
@@ -9,7 +10,7 @@ class Matrix {
         int false_negative = 0;
         int false_positive = 0;
         int true_negative = 0;
-        int len;
+        int len = 0;
 
 
         vector <int> expected;
@@ -28,7 +29,8 @@ class Matrix {
         // int y_neg; //target
         // int yhat_neg; //predicted
 
-      
+    
+       
         
 
 
@@ -38,6 +40,13 @@ class Matrix {
 };
 class ClassificationReport{
     public:
+        int true_positive;
+        int true_negative;
+        int false_positive;
+        int false_negative;
+        int len;
+
+
         double Accuracy(int true_positive, int true_negative, int len);
         double Precision(int true_positive, int false_positive);
         double Recall(int true_positive, int false_negative);
@@ -49,3 +58,4 @@ class ClassificationReport{
         double accuracy;
 
 };
+}

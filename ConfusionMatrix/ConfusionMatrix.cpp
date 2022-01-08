@@ -5,6 +5,7 @@
 #include <cstddef>
 using std::cout; using std::cin;
 
+using namespace PerformanceEval;
 //Possibly will be Booleans? Meant to be for individual indices which 
 //may or may not need iterValue. May be able to do with only calcMatrix
 
@@ -33,6 +34,7 @@ int Matrix::calcMatrix(vector <int> expected_, vector <int> predicted_){
         }
     }
     return true_positive;return true_negative;return false_positive; return false_negative;
+
 }
 
 
@@ -42,18 +44,18 @@ double ClassificationReport::Accuracy(int true_positive, int true_negative, int 
 }
 
 double ClassificationReport::Precision(int true_positive, int false_positive){
-    precision = true_positive / true_positive + false_positive;
+    precision = true_positive / (true_positive + false_positive);
     return precision;
     // int * precision = new int;//pointer here or in main file?
 }
 
 double ClassificationReport::Recall(int true_positive, int false_negative){
-    recall = true_positive / true_positive + false_negative;
+    recall = true_positive / (true_positive + false_negative);
     return recall;
 }
 
 double ClassificationReport::F1(double precision, double recall){
-    f_one = 2 / (1/precision) + (1/recall);
+    f_one = 2 / ((1/precision) + (1/recall));
     return f_one;
      
 }
