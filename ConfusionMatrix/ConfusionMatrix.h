@@ -6,11 +6,11 @@ using std::vector;
 class Matrix {
 
     public:
-        int true_positive = 0;
-        int false_negative = 0;
-        int false_positive = 0;
-        int true_negative = 0;
-        int len = 0;
+        int true_positive;
+        int false_negative;
+        int false_positive;
+        int true_negative;
+        int len;
 
 
         vector <int> expected;
@@ -29,10 +29,10 @@ class Matrix {
         // int y_neg; //target
         // int yhat_neg; //predicted
 
-        // double Accuracy(int true_positive, int true_negative, int len);
-        // double Precision(int true_positive, int false_positive);
-        // double Recall(int true_positive, int false_negative);
-        // double F1(double precision, double recall);
+        double Accuracy(int true_positive, int true_negative, int len);
+        double Precision(int true_positive, int false_positive);
+        double Recall(int true_positive, int false_negative);
+        double F1(double precision, double recall);
 
         double precision;
         double recall;

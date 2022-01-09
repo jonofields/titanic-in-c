@@ -59,12 +59,16 @@ int main()
 
     cout << "Classification Report: " << "\n" << endl;
 
+    mat.Accuracy(mat.true_positive, mat.true_negative, mat.len);
     cout<< "\t" << "Accuracy: " << mat.accuracy << "\n" << endl;
 
+    mat.Precision(mat.true_positive, mat.false_positive);
     cout<< "\t" << "Precision: " << mat.precision << "\n"<< endl;
  
+    mat.Recall(mat.true_positive, mat.false_negative);
     cout<< "\t" << "Recall: " << mat.recall << "\n"<< endl;
 
+    mat.F1(mat.precision, mat.recall);
     cout<< "\t" << "F1: " << mat.f_one << "\n"<< endl;
 
     
