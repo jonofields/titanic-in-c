@@ -1,4 +1,7 @@
 #pragma once
+#include <cstdlib>
+#include <vector>
+using std::vector;
 class Split {
     public:
     int X;
@@ -17,4 +20,14 @@ class Split {
     private:
     int test_p;
     int train_p;
+};
+class Randomize{
+    public:
+    int i;
+    vector<int> vector_x;
+    vector<double> vector_y;
+    int randomizeVector(int i);
+
+    vector<int> inputVectorY(vector<int> vector_y);
+    vector<double> inputVectorX(vector<double> vector_x);
 };
